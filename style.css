@@ -7,7 +7,17 @@
 body {
     background-color: var(--nw-color);
 }
+
+.app-title {
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+}
 .page-content {
+    max-width: 650px;
+    margin: 40px auto;
     box-shadow: 3px 3px 5px rgba(65, 65, 65, 0.267);
 }
 .page-title {

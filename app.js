@@ -1,11 +1,11 @@
 const qrCode = new QRCodeStyling({
-    width: 1000,
-    height: 1000,
+    width: 1200,
+    height: 1200,
     type: "canvas",
     image: "./images/branding.svg",
     dotsOptions: {
         color: "#EB514E",
-        type: "extra-rounded"
+        type: "rounded"
     },
     backgroundOptions: {
         color: "#FFFFFF",
@@ -21,7 +21,7 @@ window.onload = () => {
         e.preventDefault()
         let userInput = document.getElementById("user-input")
         let checkedSize = document.querySelector('input[name=sizeRadio]:checked');
-        let defaultSize = 1000;
+        let defaultSize = 1200;
         if (checkedSize !== undefined) {
             defaultSize = +checkedSize.value
         }

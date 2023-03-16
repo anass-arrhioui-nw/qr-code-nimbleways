@@ -2,7 +2,7 @@ const qrCode = new QRCodeStyling({
     width: 1000,
     height: 1000,
     type: "canvas",
-    image: "https://raw.githubusercontent.com/anass-arrhioui-nw/qr-code-nimbleways/main/images/branding.svg",
+    image: "./images/branding.svg",
     dotsOptions: {
         color: "#EB514E",
         type: "extra-rounded"

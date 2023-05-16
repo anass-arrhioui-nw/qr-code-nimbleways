@@ -51,7 +51,8 @@ document.getElementById("download-button").addEventListener("click", () => {
     }
 })
 
-function onSignIn(googleUser) {
+function handleCredentialResponse(googleUser) {
+    console.log({googleUser});
     var profile = googleUser.getBasicProfile();
     console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
     console.log('Name: ' + profile.getName());

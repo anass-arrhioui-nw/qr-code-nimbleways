@@ -40,6 +40,13 @@ window.onload = () => {
 
 document.getElementById("download-button").addEventListener("click", () => {
     if(qrCode !== undefined && qrCode._options.data != "") {
-        qrCode.download({ name: "nimblewaysQRCode", extension: "png" });
+        let fileName = document.getElementById("file-name-user-input").value
+        console.log(fileName.value)
+        if(fileName !== undefined && typeof fileName === 'string' && fileName.trim().length > 0)
+            fileName = fileName.trim();
+        else
+            fileName = "nimblewaysQRCode";
+
+        qrCode.download({ name: fileName, extension: "png" });
     }
 })
